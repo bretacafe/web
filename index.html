@@ -139,6 +139,16 @@
     padding-right:38px;
   }
   select#tipoCafe{ margin-bottom:8px; }
+  .field-note{
+    margin:10px 0 0;
+    padding:10px 14px;
+    background:var(--secondary);
+    border-left:3px solid var(--primary);
+    border-radius:3px;
+    font-size:14px;
+    line-height:1.4;
+    color:var(--ink);
+  }
 
   /* Grind selector — signature element */
   .grind-grid{
@@ -415,8 +425,12 @@
       <label class="field-label" for="tipoCafe">Tipo de café</label>
       <select id="tipoCafe" name="tipoCafe" required>
         <option value="" disabled selected>Elegí un origen</option>
-        <option value="Peruano" data-desc="Café suave con notas de cacao y caramelo.">Peruano — suave, notas de cacao y caramelo</option>
-        <option value="Brasilero" data-desc="Café intenso, de perfil tradicional.">Brasilero — intenso, perfil tradicional</option>
+        <option value="Peruano - Intensidad media">Peruano - Intensidad media</option>
+        <option value="Brasilero - Intensidad baja" disabled>Brasilero - Intensidad baja · Próximamente</option>
+        <option value="Costa Rica - Intensidad media" disabled>Costa Rica - Intensidad media · Próximamente</option>
+        <option value="Guatemala - Intensidad baja" disabled>Guatemala - Intensidad baja · Próximamente</option>
+        <option value="Colombia - Intensidad baja" disabled>Colombia - Intensidad baja · Próximamente</option>
+        <option value="Guatemala - Intensidad media" disabled>Guatemala - Intensidad media · Próximamente</option>
       </select>
     </div>
 
@@ -475,9 +489,10 @@
       <label class="field-label" for="formato">Formato</label>
       <select id="formato" name="formato" required>
         <option value="" disabled selected>Elegí un formato</option>
-        <option value="250g">Bolsa 250g</option>
-        <option value="500g">Bolsa 500g</option>
+        <option value="250g">Bolsa 250g - $20.000</option>
+        <option value="500g">Bolsa 500g - $38.000</option>
       </select>
+      <p class="field-note">En tu primera compra tenés un 20% OFF</p>
     </div>
 
     <div class="field">
